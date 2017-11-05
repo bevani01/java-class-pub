@@ -34,9 +34,29 @@ public class Ex2Driver {
    * TODO: Task 1: Define and call a function that takes a number (n) as a parameter and prints the result of coin flips ("Heads" or "Tails" with equal probability) until there are n "Heads" in a row.
    * @param n
    */
+  
   public static void task1(int n) {
-    throw new UnsupportedOperationException("Task 1 is not implemented yet.");
+  System.err.println("--task 1--");
+  nHeads(n);  
   }
+    /**
+     *
+     * @param n
+     */
+    public static void nHeads(int n) {
+      int heads = 0;
+      while (heads !=n){
+          Random rnd = new Random();
+          int result = rnd.nextInt(2);
+          if (result == 0) {
+              heads ++;
+              System.out.println("heads");}
+          else {heads = 0;
+          System.out.println("tails");
+          }
+          }
+      }
+  
   /**
    * TODO: Task 2: Define a function that takes an array of integers and a number as parameters and returns boolean True if the number provided is larger than every element of the array, False otherwise.
    * @param arr
@@ -44,7 +64,14 @@ public class Ex2Driver {
    * @return 
    */
   public static boolean task2(int[] arr, int n) {
-    throw new UnsupportedOperationException("Task 2 is not implemented yet.");
+    System.out.println("%n%n");
+    System.out.println("--task 2--");
+    for (int i = 0; i < arr.length; ++i) {
+        if (arr[i] > n) {
+            return false;
+        }
+    }
+    return false;
   }
   /**
    * TODO: Task 3: Write a function that takes an array of integers and a threshold and prints how many values are below the threshold.
@@ -53,7 +80,7 @@ public class Ex2Driver {
    * @return 
    */
   public static int task3(int[] arr, int threshold) {
-    throw new UnsupportedOperationException("Task 3 is not implemented yet.");
+    
   }
   /**
    * TODO: Task 4: Write a function that takes an array of integers as a parameter, finds the difference between 100 and the largest element of the array and adds this difference to every element in the array. (Note: after this function call the largest value in the array must be 100.)
