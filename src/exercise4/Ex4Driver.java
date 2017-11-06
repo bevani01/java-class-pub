@@ -6,7 +6,7 @@ package exercise4;
 public class Ex4Driver {
   /* Define a function that takes 1 integer as a parameter and returns an integer. Write 2 unit tests to verify the function validity. */
 //  public Integer task1(Integer);
-  /* Define a function that takes 1 string as a parameter and returns an integer. Write 2 unit tests to verify the function validity. */
+/* Define a function that takes 1 string as a parameter and returns an integer. Write 2 unit tests to verify the function validity. */
 //  public Integer task2(String);
   /* Define a function that takes 1 character as a parameter and returns an integer. Write 2 unit tests to verify the function validity. */
 //  public Integer task3(Character);
