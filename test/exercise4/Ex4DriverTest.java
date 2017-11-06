@@ -37,4 +37,16 @@ public class Ex4DriverTest {
   public void tearDown() {
   }
 
+    /**
+     * Test of main method, of class Ex4Driver.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        Ex4Driver.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
 }
