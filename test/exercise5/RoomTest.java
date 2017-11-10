@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author yasiro01
+ * @author bevani01
  */
 public class RoomTest {
   private Room room1;
