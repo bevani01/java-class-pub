@@ -83,14 +83,14 @@ public class MediaLibrary {
   }
   
   public void printAllItems() {
-    for (Item item: myLibrary) {
-      System.out.println(item);
-    }
+      myLibrary.stream().forEach((item) -> {
+          System.out.println(item);
+      });
   }
   
   public void printAllItemsDetailed() {
-    for (Item item: myLibrary) {
-      System.out.println(item.getInfo());
-    }
+      myLibrary.stream().forEach((item) -> {
+          System.out.println(item.getInfo());
+      });
   }
 }

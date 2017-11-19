@@ -9,6 +9,12 @@ public class PhysicalMovie extends Movie {
   private final String medium;
   private String location;
 
+  public PhysicalMovie(String medium, String location, String director, int releaseYear, long id, String title, int quantity) {
+      super(director, releaseYear, id, title, quantity);
+      this.medium = medium;
+      this.location = location;
+  }
+
   /**
    * Get the value of medium
    * @return the value of medium
@@ -37,8 +43,12 @@ public class PhysicalMovie extends Movie {
    * Move an item to a new location
    * @param newLocation 
    */
-  public void move(String newLocation) {
-    throw new UnsupportedOperationException();
+public void move(String newLocation) {
+    this.location = newLocation;
   }
-
+  
+  @Override
+public String getInfo() {
+    return String.format("%s (%d) by %s is available at %s", title, releaseYear, director, location);
+}
 }
