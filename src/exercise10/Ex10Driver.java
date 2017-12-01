@@ -2,7 +2,7 @@ package exercise10;
 
 /**
  * Exercise 10 Driver
- * @author yasiro01
+ * @author bevani01
  */
 public class Ex10Driver {
 
